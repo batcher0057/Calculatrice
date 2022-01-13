@@ -1,0 +1,51 @@
+
+<!DOCTYPE html>
+<html lang="fr">
+
+    <head>
+        <meta charset="utf-8" />
+        <title>Calculatrice</title>
+        <link rel="stylesheet" href="calculatrice.css" />
+    </head>
+
+    <body>
+        <div class="calculette">
+            <div class="ecran">
+                <div id="ecran1"></div>
+                <div id="ecran2"></div>
+            </div>
+            <div class="rangee1">
+                <button onclick="nettoyerEntree()">CE</button>
+                <button onclick="nettoyer()">C</button>
+                <button onclick="retourArr(saisie)"><=</button>
+                <button onclick="operation('/')">/</button>
+            </div>
+            <div class="rangee2">
+                <button class="chiffre" onclick="afficher(7)">7</button>
+                <button class="chiffre" onclick="afficher(8)">8</button>
+                <button class="chiffre" onclick="afficher(9)">9</button>
+                <button onclick="operation('*')">*</button>
+            </div>
+            <div class="rangee3">
+                <button class="chiffre" onclick="afficher(4)">4</button>
+                <button class="chiffre" onclick="afficher(5)">5</button>
+                <button class="chiffre" onclick="afficher(6)">6</button>
+                <button onclick="operation('-')">-</button>
+            </div>
+            <div class="rangee4">
+                <button class="chiffre" onclick="afficher(1)">1</button>
+                <button class="chiffre" onclick="afficher(2)">2</button>
+                <button class="chiffre" onclick="afficher(3)">3</button>
+                <button onclick="operation('+')">+</button>
+            </div>
+            <div class="rangee5">
+                <button onclick="inversion(saisie)">+/-</button>
+                <button class="chiffre" onclick="afficher(0)">0</button>
+                <button onclick="afficher('.')">.</button>
+                <button onclick="egal(signe)">=</button>
+            </div>
+        </div>
+    </body>
+</html>
+
+<script type="text/javascript" src="calculatrice.js"></script>
